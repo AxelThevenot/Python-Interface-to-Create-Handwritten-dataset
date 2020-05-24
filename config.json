@@ -1,0 +1,60 @@
+{
+  "input":
+  {
+      "H": 512,
+      "W": 512,
+      "thickness": 0.01,
+      "comment H": "int: height of the draw image",
+      "comment W": "int: width of the draw image",
+      "comment thickness": "int: proportionnal thickness according to the diagonal of the image size"
+  },
+  "output":
+  {
+      "H": 28,
+      "W": 28,
+      "comment H": "int: height of the output image",
+      "comment W": "int: width of the output image"
+  },
+  "process":
+  {
+      "volume": 10,
+      "selection": "ROTATE",
+      "display_output": true,
+      "comment_volume": "int: number of sample by class we can to get at the end",
+      "comment_selection": "str: process of selection. can be RANDOM|CLASSBYCLASS|ROTATE"
+  },
+  "storage":
+  {
+      "root": "dataset",
+      "by_class_name": true,
+      "comment root": "str: path to the root folder",
+      "comment by_class_name": "bool: store classes in subfolders"
+  },
+  "line":
+  {
+      "thickness": [0.03, 0.06, 0.12],
+      "range_value": [128, 255],
+      "fading": 0.5,
+      "comment thickness": "int or list of int: proportionnal thickness according to the diagonal of the input size",
+      "comment range_value": "int or list of int: random range for line value when drawing",
+      "comment fading": "int: value of the border fade for a linear fading"
+  },
+  "interpolation":
+  {
+      "method": ["INTER_NEAREST", "INTER_AREA", "INTER_CUBIC"],
+      "comment method": "str or list of str: OpenCV interpolation for resizing to ouput. Can be INTER_NEAREST|INTER_LINEAR|INTER_AREA|INTER_CUBIC|INTER_LANCZOS4|RANDOM"
+  },
+  "classes" :
+  [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+  ]
+}
