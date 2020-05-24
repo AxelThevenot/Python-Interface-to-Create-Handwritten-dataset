@@ -2,7 +2,7 @@
 Python Interface to Create Handwritten dataset
 
 
-Original article and full tutorial : [Build Your Fully Configurable Interface to Create MNIST-like Dataset with Python in 10 Minutes](https://medium.com/@axel.thevenot)
+Original article and full tutorial : [Build Your Fully Configurable Interface to Create MNIST-like Dataset with Python in 10 Minutes](https://medium.com/@axel.thevenot/43ab414a875e?source=friends_link&sk=228606329a318e9bd743515787c1e101)
 
 ![python_interface_handwritten_digit](python_interface_handwritten_digit.gif)
 
